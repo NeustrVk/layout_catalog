@@ -40,23 +40,23 @@
     &:active {
       color: $blue-color;
     }
+  }
+}
 
-    &--is-active,
-    &--is-active:link,
-    &--is-active:visited {
-      color: $blue-color;
-      position: relative;
+.is-active,
+.is-active:link,
+.is-active:visited {
+  color: $blue-color;
+  position: relative;
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 4px;
-        border-radius: 8px;
-        width: 100%;
-        background-color: $blue-color;
-      }
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: $blue-color;
   }
 }
